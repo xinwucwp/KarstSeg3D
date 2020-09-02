@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Where is the Mines JTK? (Where is your build.xml?)
+export CIG_HOME=../../model
+# If Mac OS X, which version of Java should we use?
+export JAVA_VERSION=1.8.0
+
+# Where will Java look for classes? 
+# Add other jars to this list as necessary.
+export CLASSPATH=\
+$CIG_HOME/libs/edu-mines-jtk-1.0.0.jar:\
+$CIG_HOME/libs/gluegen-rt.jar:\
+$CIG_HOME/libs/jogl-all.jar:\
+$CIG_HOME/libs/jythonlib.jar:\
+$CIG_HOME/libs/commons-math3-3.0.jar:\
+$CIG_HOME/build/libs/model.jar:\
+.
+
+# Run a server 64-bit VM with assertions enabled and a 1GB max Java heap.
+# Modify these flags and properties as necessary for your system.
+
+java -server -d64 -ea -Xmx250g \
+-Djava.library.path=$JAVA_LIBRARY_PATH \
+-Djava.util.logging.config.file=$HOME/.java_logging_config \
+-Dpython.cachedir.skip=false \
+-Dpython.cachedir=/tmp/cachedir \
+org.python.util.jython $*
+
