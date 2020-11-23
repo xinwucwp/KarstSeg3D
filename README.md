@@ -35,6 +35,7 @@ Run `<train.py>` to start training a new karstSeg model by using the 120 synthet
 ## Publications
 
 If you find this work helpful in your research, please cite:
+
     @article{wu2020karstSeg,
         author = {Xinming Wu and Shangsheng Yan and Jie Qi and Hongliu Zeng},
         title = {Deep Learning for Characterizing Paleokarst Collapse Features in 3-{D} Seismic Images 3{D}},
