@@ -14,7 +14,7 @@ As described in **Deep Learning for Characterizing Paleokarst Collapse Features 
 ## Getting Started with Example Model for paleokarst prediction
 
 If you would just like to try out a pretrained example model, 
-then you can download the [pretrained model](https://drive.google.com/drive/folders/1q8sAoLJgbhYHRubzyqMi9KkTeZWXWtNd) and use the `<apply.py>` script to run a demo. 
+then you can download the [pretrained model](https://zenodo.org/record/4285733/files/checkpoint.50.hdf5?download=1) and use the `<apply.py>` script to run a demo. 
 I recommend to run the prediction on CPU `<./cpurun apply.py>`, which 
 is fast enough.
 
@@ -24,7 +24,9 @@ is fast enough.
 of synthetic seismic and corresponding karst volumes, which were 
 shown to be sufficient to train a good karst segmentation network.** 
 
-**The training and validation datasets can be downloaded [here](https://doi.org/10.5281/zenodo.3690252)**
+**The training and validation datasets can be 
+downloaded [here](https://doi.org/10.5281/zenodo.4285733)**
+
 
 ### Training
 
