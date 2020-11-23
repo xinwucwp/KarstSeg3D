@@ -22,13 +22,13 @@ corresponding karst volumes, which were shown to be sufficient to train a good k
 
 ### Training
 
-Run 'train.py' to start training a new faultSeg model by using the 120 synthetic datasets
+Run `<train.py>` to start training a new karstSeg model by using the 120 synthetic datasets
 
 ## Publications
 
 If you find this work helpful in your research, please cite:
 
-    @article{wu2019faultSeg,
+    @article{wu2020karstSeg,
         author = {Xinming Wu and Luming Liang and Yunzhi Shi and Sergey Fomel},
         title = {Fault{S}eg3{D}: using synthetic datasets to train an end-to-end convolutional neural network for 3{D} seismic fault segmentation},
         journal = {GEOPHYSICS},
