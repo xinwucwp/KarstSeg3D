@@ -7,8 +7,9 @@ As described in **Deep Learning for Characterizing Paleokarst Collapse Features 
 [Shangsheng Yan](http://cig.ustc.edu.cn/shangsheng/list.htm)<sup>1</sup>, 
 [Jie Qi](https://scholar.google.com/citations?user=p3dQEsIAAAAJ&hl=en)<sup>2</sup> and 
 [Hongliu Zeng](https://www.beg.utexas.edu/people/hongliu-zeng)<sup>3</sup>.
-<sup>1</sup>[Computational Interpretation Group](http://cig.ustc.edu.cn/), USTC;<sup>3</sup>
-The University of Oklahoma; <sup>3</sup>BEG, UT Austin.
+<sup>1</sup>[Computational Interpretation Group](http://cig.ustc.edu.cn/), USTC; 
+<sup>2</sup>The University of Oklahoma; 
+<sup>3</sup>BEG, UT Austin.
 
 ## Getting Started with Example Model for paleokarst prediction
 
