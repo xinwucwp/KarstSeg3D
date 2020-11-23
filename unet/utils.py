@@ -46,6 +46,7 @@ class DataGenerator(keras.utils.Sequence):
     if self.shuffle == True:
       np.random.shuffle(self.indexes)
 
+  '''
   def __data_generation(self, data_IDs_temp):
     'Generates data containing batch_size samples'
     # Initialization
@@ -84,3 +85,38 @@ class DataGenerator(keras.utils.Sequence):
       X[k,] = np.reshape(np.rot90(gx,k,(2,1)), (m1, m2, m3, self.n_channels))
       Y[k,] = np.reshape(np.rot90(kx,k,(2,1)), (m1, m2, m3, self.n_channels))  
     return X,Y
+  '''
+
+  def __data_generation(self, data_IDs_temp):
+    'Generates data containing batch_size samples'
+    # Initialization
+    a = 4 #data augumentation
+    n1,n2,n3=self.dim
+    m1,m2,m3 = 128,128,128#cut a smaller volume
+    X = np.zeros((a*self.batch_size, m1, m2, m3, self.n_channels),dtype=np.single)
+    Y = np.zeros((a*self.batch_size, m1, m2, m3, self.n_channels),dtype=np.single)
+    for k in range(self.batch_size):
+      gx  = np.fromfile(self.dpath+str(data_IDs_temp[k])+'.dat',dtype=np.single)
+      kx  = np.fromfile(self.fpath+str(data_IDs_temp[k])+'.dat',dtype=np.single)
+      gx = np.reshape(gx,self.dim)
+      gx = np.transpose(gx)
+
+      kx = np.reshape(kx,self.dim)
+      kx = np.transpose(kx)
+ 
+      k1 = random.randint(0,n1-m1-1)
+      k2 = random.randint(0,n2-m2-1)
+      k3 = random.randint(0,n3-m3-1)
+      gx = gx[k1:k1+m1,k2:k2+m2,k3:k3+m3]#randomly cut a smaller volume
+      kx = kx[k1:k1+m1,k2:k2+m2,k3:k3+m3]#randomly cut a smaller volume
+
+      gm = np.mean(gx)
+      gs = np.std(gx)
+      gx = gx-gm
+      gx = gx/gs
+      c = k*a
+      for i in range(0,4):
+        X[c+i,] = np.reshape(np.rot90(gx,i,(2,1)), (m1,m2,m3,self.n_channels))
+        Y[c+i,] = np.reshape(np.rot90(kx,i,(2,1)), (m1,m2,m3,self.n_channels))
+    return X,Y
+
