@@ -23,7 +23,7 @@ is fast enough.
 of synthetic seismic and corresponding karst volumes, which were 
 shown to be sufficient to train a good karst segmentation network.** 
 
-**The training and validation datasets can be downloaded [here](https://drive.google.com/drive/folders/1FcykAxpqiy2NpLP1icdatrrSQgLRXLP8)**
+**The training and validation datasets can be downloaded [here](https://doi.org/10.5281/zenodo.3690252)**
 
 ### Training
 
