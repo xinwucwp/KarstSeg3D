@@ -11,8 +11,6 @@ plotOnly = True
 plotOnly = False
 
 def main(args):
-  #goMoveData()
-  #goDyResample()
   if args[1]=="jie":
     goJie()
   elif args[1]=="hongliu":

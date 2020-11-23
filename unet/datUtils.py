@@ -9,8 +9,8 @@ from common import *
 # Internal constants
 
 #_datdir = "/media/xinwu/disk-2/karstFW/"
-_datdir = "../../data/"
-_pngdir = "../../png/"
+_datdir = "../data/"
+_pngdir = "../png/"
 
 #############################################################################
 # Setup
@@ -48,30 +48,6 @@ def setupForSubset(name):
     pngDir = _pngdir+"hongliu/"
     seismicDir = _datdir+"hongliu/"
     n1,n2,n3 = 256,256,256
-    d1,d2,d3 = 1.0,1.0,1.0 
-    f1,f2,f3 = 0.0,0.0,0.0 # = 0.000,0.000,0.000
-    s1,s2,s3 = Sampling(n1,d1,f1),Sampling(n2,d2,f2),Sampling(n3,d3,f3)
-  elif name=="opunake":
-    print "setupForSubset: opunake"
-    pngDir = _pngdir+"opunake/"
-    seismicDir = _datdir+"opunake/"
-    n1,n2,n3 = 500,1870,700
-    d1,d2,d3 = 1.0,1.0,1.0 
-    f1,f2,f3 = 0.0,0.0,0.0 # = 0.000,0.000,0.000
-    s1,s2,s3 = Sampling(n1,d1,f1),Sampling(n2,d2,f2),Sampling(n3,d3,f3)
-  elif name=="crf":
-    print "setupForSubset: crf"
-    pngDir = _pngdir+"crf/"
-    seismicDir = _datdir+"crf/"
-    n1,n2,n3 = 601,3675,825
-    d1,d2,d3 = 1.0,1.0,1.0 
-    f1,f2,f3 = 0.0,0.0,0.0 # = 0.000,0.000,0.000
-    s1,s2,s3 = Sampling(n1,d1,f1),Sampling(n2,d2,f2),Sampling(n3,d3,f3)
-  elif name=="f3d":
-    print "setupForSubset: f3d"
-    pngDir = _pngdir+"f3d/"
-    seismicDir = _datdir+"f3d/"
-    n1,n2,n3 = 128,384,512
     d1,d2,d3 = 1.0,1.0,1.0 
     f1,f2,f3 = 0.0,0.0,0.0 # = 0.000,0.000,0.000
     s1,s2,s3 = Sampling(n1,d1,f1),Sampling(n2,d2,f2),Sampling(n3,d3,f3)
