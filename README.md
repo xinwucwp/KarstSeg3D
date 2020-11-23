@@ -1,6 +1,6 @@
 # KarstSeg3D: Deep Learning for Characterizing Paleokarst Collapse Features in 3-D Seismic Images
 
-**This is a [Keras](https://keras.io/) version of KarstSeg implemented by [Xinming Wu](http://www.jsg.utexas.edu/wu/) for Paleokarst segmentation in 3D seismic images**
+**This is a [Keras](https://keras.io/) version of KarstSeg implemented by [Xinming Wu](http://cig.ustc.edu.cn/xinming/list.htm) for Paleokarst segmentation in 3D seismic images**
 
 As described in **Deep Learning for Characterizing Paleokarst Collapse Features in 
 3-D Seismic Images** by [Xinming Wu](http://cig.ustc.edu.cn/xinming/list.htm)<sup>1</sup>, 
