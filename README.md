@@ -18,6 +18,12 @@ then you can download the [pretrained model](https://zenodo.org/record/4285733/f
 I recommend to run the prediction on CPU `<./cpurun apply.py>`, which 
 is fast enough.
 
+## Note
+
+The `apply.py` performs the 3D visualization of the results by using Java libraries, which requires 
+install Java (1.8 is recommended). You can simply mute the visualization codes if you got error 
+messages regarding to the plotting. 
+
 ### Dataset
 
 **To train our CNN network, we automatically created 120 pairs 
