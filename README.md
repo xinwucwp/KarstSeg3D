@@ -20,7 +20,7 @@ is fast enough.
 
 ## Note
 
-The `apply.py` performs the 3D visualization of the results by using Java libraries, which requires 
+The `apply.py` performs the 3D visualization of results by using Java libraries, which requires 
 install Java (1.8 is recommended). You can simply mute the visualization codes if you got error 
 messages regarding to the plotting. 
 
